@@ -25,6 +25,7 @@ public class Main {
             while((line = bufferedReader.readLine()) != null){
             String[] values = line.split(separator);
                 System.out.println(operationName + schemaTableName + " VALUES (" + id +", " + dataCreate +", " + dataModificate + ",'" + values[0] + "', '" + values[1] + "');");
+                id++;
             }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
